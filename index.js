@@ -1,4 +1,4 @@
 'use strict';
 
-console.log('Hi');
-console.log('All');
+console.log('Hi!!');
+console.log('All!');
