@@ -2,8 +2,23 @@
   "name": "pro-git-book",
   "version": "1.0.0",
   "description": "Изучение возможностей Git при помощи \"Pro Git\" книги",
-  "main": "index.js",
+  "main": "src/index.ts",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "serve": "tsc --emitDeclarationOnly -w",
+    "build": "tsc --emitDeclarationOnly && babel src --out-dir dist --extensions \".ts,.tsx\" && node dist/index.js",
+    "test": "node test/index.js"
+  },
   "repository": "https://github.com/newbornfrontender/pro-git-book.git",
   "author": "Infant Frontender <newbornfrontender@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.0.0-beta.55",
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.55",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55",
+    "@babel/preset-typescript": "^7.0.0-beta.55",
+    "typescript": "^3.1.0-dev.20180803"
+  }
 }
