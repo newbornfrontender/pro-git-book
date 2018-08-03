@@ -1,0 +1,9 @@
+{
+  "name": "pro-git-book",
+  "version": "1.0.0",
+  "description": "Изучение возможностей Git при помощи \"Pro Git\" книги",
+  "main": "index.js",
+  "repository": "https://github.com/newbornfrontender/pro-git-book.git",
+  "author": "Infant Frontender <newbornfrontender@gmail.com>",
+  "license": "MIT"
+}
