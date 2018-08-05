@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+}
+
+.list {
+  background-color: green;
+
+  &__item {
+    background-color: orange;
+
+    &--sass {
+      color: pink;
+    }
+
+    &--ts {
+      color: blue;
+    }
+
+    &--babel {
+      color: yellow;
+    }
+  }
+}
